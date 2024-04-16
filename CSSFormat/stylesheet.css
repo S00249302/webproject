@@ -1,0 +1,345 @@
+
+/*index */
+:root {
+--red: #f9032f;
+--black: #000;
+--white: #fff;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+background-color: #000;
+height: 80px;
+padding: 0.5rem calc((100ww - 1200px) / 2);
+display: flex;
+justify-content: space-between;
+align-items: center ;
+position: relative;
+}
+
+.navbar_logo {
+
+color: var(--white);
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.navbar_link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+
+
+.navbar_link:hover {
+color: #f9032f;
+}
+
+/*index section */
+
+.hero{
+    background-image: url(../images/whiteback.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100ww - 1200px) / 2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero_content {
+    color: var(--white);
+    padding: 3rem 1rem;
+    line-height: 1;
+}
+.hero_content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+.hero_content p {
+    font-size: clamp(1rem, 4ww, 2.5rem);
+    margin-bottom: 3rem;
+
+}
+
+.button {
+    padding: 1rem 3rem;
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: var(--black);
+
+}
+
+/* About Us section */
+.about {
+    padding: 8rem calc((100vw - 1200px) / 2);
+    color: var(--black);
+}
+
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_text {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.bout_img {
+    width: 100%; 
+    height: auto; 
+}
+
+.topline {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about_heading {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: var(--black);
+}
+
+.about_features ul {
+    list-style-type: disc; 
+}
+
+.about_feature {
+    margin-bottom: 1rem; 
+    color: var(--black);
+}
+
+/* Styling for questions and answers */
+.about_text ol {
+    list-style-type: numbers;
+    margin-left: 20px;
+}
+
+.about_text ol li {
+    margin-bottom: 20px;
+}
+
+.about_text ol li strong {
+    font-weight: bold;
+    color: red;
+}
+
+.about_text ol li p {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.about_text h2 {
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+
+
+
+/* News Section */
+.news {
+    background: var(--black);
+    color: var(--red);
+    padding: 6rem calc((100ww - 1100px) / 2);
+    text-align: center;
+}
+
+.news h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5ww, 3rem);
+    padding: 0 1rem;
+}
+
+.news_desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3ww, 1.5rem);
+    padding: 1rem;
+    color: var(--white);
+}
+
+.news_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+}
+
+.news_card {
+    padding: 2%;
+    min-height: 450px;
+    width: 325px;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news_info {
+    min-height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex;
+   
+}
+
+.news_card p {
+    margin-top: 2rem;
+    min-height: 150px;
+}
+
+.news_card h3 {
+    font-size: clamp(1rem, 5ww, 2rem);
+    margin-bottom: 2rem;
+}
+
+
+/* Games Section */
+
+.games {
+    padding: 8rem calc((100vw - 1200px) / 2);
+}
+.games_wrapper h1 {
+    color: var(--red);
+    display: flex;
+
+}
+
+.game_desc {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3ww, 1.5rem);
+    padding: 1rem;
+}
+.games_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.text_text {
+    flex-basis: 100%;
+}
+
+.games_card {
+    flex-basis: calc(30% - 0.5rem); /* Two items per row with gap */
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.games_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Email Section */
+.email_section {
+    background-color: black;
+    color: red;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 0rem 0rem;
+}
+
+.email_section h2 {
+    color: red;
+}
+
+.email_section p {
+    color: white;
+}
+
+.email_section label {
+    color: white;
+    margin-right: 5px;
+}
+
+.email_section .required {
+    color: red;
+}
+
+.email_section input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.email_section button {
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+.footer_section {
+    border-top: 4px solid black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 0px;
+ 
+}
+
+.footer_section h2 {
+    color: red;
+}
+
+.footer_section p {
+    margin: 5px 0;
+}
+
+
+/* Video Section */
+.video_section {
+    margin-top: 20px;
+}
+
+.video {
+    width: calc(50% - 10px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.video:last-child {
+    margin-right: 0;
+}
+.youtube_videos p {
+    color: var(--red)
+}
